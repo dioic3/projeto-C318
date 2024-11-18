@@ -28,7 +28,7 @@ param_dist = {
 results = pd.DataFrame(columns=['Algoritmo', 'Accuracy', 'F1-Score', 'Precision', 'Recall'])
 
 # Loop para rodar o modelo 10 vezes
-for i in range(10):
+for i in range(3):
     # Dividir os dados em treino e teste
     X_train, X_test, y_train, y_test = train_test_split(X, labels, test_size=0.2, random_state=i)
 
@@ -50,14 +50,14 @@ for i in range(10):
     recall = recall_score(y_test, y_pred_svm)
     
     # Adicionar os resultados ao DataFrame
-    results = results.append({
+    results = pd.concat([results, pd.DataFrame([{
         'Algoritmo': 'SVM',
         'Accuracy': accuracy,
         'F1-Score': f1,
         'Precision': precision,
         'Recall': recall
-    }, ignore_index=True)
+    }])], ignore_index=True)
 
 # Salvar o DataFrame em um arquivo CSV
-results.to_csv('svm.csv', index=False)
+results.to_csv('svm/svm.csv', index=False)
 print("Resultados salvos em 'svm.csv'")

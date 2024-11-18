@@ -1,0 +1,39 @@
+Épocas: 5, Repetição: 1
+Acurácia: 0.938
+Precisão: 0.944
+Recall: 0.932
+F1-Score: 0.938
+
+Épocas: 5
+Média Acurácia: 0.938
+Média Precisão: 0.944
+Média Recall: 0.932
+Média F1-Score: 0.938
+Tempo total: 0.00 min
+---------------------------------
+Épocas: 10, Repetição: 1
+Acurácia: 0.920
+Precisão: 0.937
+Recall: 0.902
+F1-Score: 0.919
+
+Épocas: 10
+Média Acurácia: 0.920
+Média Precisão: 0.937
+Média Recall: 0.902
+Média F1-Score: 0.919
+Tempo total: 0.00 min
+---------------------------------
+Épocas: 15, Repetição: 1
+Acurácia: 0.930
+Precisão: 0.915
+Recall: 0.949
+F1-Score: 0.931
+
+Épocas: 15
+Média Acurácia: 0.930
+Média Precisão: 0.915
+Média Recall: 0.949
+Média F1-Score: 0.931
+Tempo total: 0.00 min
+---------------------------------

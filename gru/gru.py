@@ -107,9 +107,9 @@ if __name__ == "__main__":
     # Definir parâmetros
     max_words = 5000
     max_sequence_len = 200
-    epochs_list = list(range(5, 60, 5))
+    epochs_list = list(range(5, 20, 5))
     results_dir = 'gru_results'
-    testes = 20  # Alterado para 20
+    testes = 1
     saves = 8
     desired_batches = 128  # Número desejado de batches por época
     
@@ -117,7 +117,7 @@ if __name__ == "__main__":
     create_directory(results_dir)
     
     # Carregar e preprocessar dados
-    dataset_path = '../../archive/dataset.csv'
+    dataset_path = 'archive/dataset.csv'
     try:
         df = load_dataset(dataset_path)
     except FileNotFoundError as e:
